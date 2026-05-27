@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Douglas Rodrigues · Front-End Developer</title>
+  <meta name="description" content="Portfólio de Douglas Rodrigues de Morais — Front-End Developer: React, TypeScript, UI Design."/>
+  <meta name="keywords" content="front-end developer, react, typescript, javascript, portfolio, douglas rodrigues"/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Cabinet+Grotesk:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ───── CURSOR GLOW ───── -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ───── WHATSAPP FLUTUANTE — link real ───── -->
+  <a href="https://wa.me/5583981668407?text=Ol%C3%A1%20Douglas!%20Acabei%20de%20ver%20seu%20portf%C3%B3lio%20e%20gostei%20bastante%20do%20seu%20trabalho.%20Podemos%20conversar%3F%0A"
+     class="whatsapp-float" target="_blank" rel="noopener" title="Fale no WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28">
+      <path fill="#fff" d="M16 0C7.163 0 0 7.163 0 16c0 2.833.736 5.495 2.027 7.807L0 32l8.418-2.004A15.934 15.934 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.267 13.267 0 0 1-6.77-1.854l-.485-.29-5.002 1.192 1.224-4.866-.317-.5A13.24 13.24 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.815c-.398-.199-2.356-1.163-2.72-1.295-.365-.133-.631-.199-.897.199-.265.398-1.03 1.295-1.263 1.56-.232.265-.465.299-.863.1-.398-.199-1.682-.62-3.204-1.977-1.184-1.057-1.983-2.362-2.215-2.76-.232-.398-.025-.614.175-.812.18-.178.398-.465.597-.697.199-.232.265-.398.398-.664.133-.265.066-.497-.033-.696-.1-.199-.897-2.163-1.23-2.96-.323-.778-.652-.672-.897-.684l-.764-.013c-.265 0-.696.1-1.062.497-.365.398-1.394 1.363-1.394 3.325s1.427 3.857 1.626 4.123c.199.265 2.808 4.288 6.803 6.013.951.41 1.694.655 2.272.839.955.303 1.824.26 2.511.158.766-.114 2.356-.963 2.688-1.893.332-.93.332-1.727.232-1.893-.099-.166-.365-.265-.763-.464z"/>
+    </svg>
+    <span class="whatsapp-tooltip" data-i18n="whatsapp_tooltip">Fale comigo!</span>
+  </a>
+
+  <!-- ───────────────────────────────────────── -->
+  <!--                NAVEGAÇÃO                  -->
+  <!-- ───────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-logo">douglas.dev</div>
+
+    <ul class="nav-links">
+      <li><a href="#about"          data-section="about"          data-i18n="nav_about">Sobre</a></li>
+      <li><a href="#skills"         data-section="skills"         data-i18n="nav_skills">Skills</a></li>
+      <li><a href="#projects"       data-section="projects"       data-i18n="nav_projects">Projetos</a></li>
+      <li><a href="#certifications" data-section="certifications" data-i18n="nav_certifications">Certificações</a></li>
+      <li><a href="#education"      data-section="education"      data-i18n="nav_education">Formação</a></li>
+      <li><a href="#experience"     data-section="experience"     data-i18n="nav_experience">Experiência</a></li>
+      <li><a href="#contact"        data-section="contact"        data-i18n="nav_contact">Contato</a></li>
+    </ul>
+
+    <!-- Ícones sociais do nav — links reais -->
+    <div class="nav-socials">
+      <a href="https://github.com/douglasrmorais" class="nav-soc" title="GitHub" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/douglas-moraiss" class="nav-soc" title="LinkedIn" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/douglas_morais.75?igsh=ajkyZjJ5ODI4cnc2" class="nav-soc" title="Instagram" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M15.998 3H8.002A5.007 5.007 0 0 0 3 8.002v7.996A5.007 5.007 0 0 0 8.002 21h7.996A5.007 5.007 0 0 0 21 15.998V8.002A5.007 5.007 0 0 0 15.998 3zm3.44 13a3.446 3.446 0 0 1-3.44 3.44H8.002A3.446 3.446 0 0 1 4.56 15.998V8.002A3.446 3.446 0 0 1 8.002 4.56h7.996A3.446 3.446 0 0 1 19.44 8.002v7.996zM12 7.378A4.622 4.622 0 1 0 12 16.622 4.622 4.622 0 0 0 12 7.378zm0 7.622a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm3.804-9.82a1.08 1.08 0 1 1-2.16 0 1.08 1.08 0 0 1 2.16 0z"/></svg>
+      </a>
+    </div>
+
+    <div class="lang-switcher" id="langSwitcher">
+      <button class="lang-btn active" data-lang="pt" onclick="setLang('pt')">
+        <span class="lang-flag"></span>
+        <span class="lang-code">PT</span>
+      </button>
+      <div class="lang-divider"></div>
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">
+        <span class="lang-flag"></span>
+        <span class="lang-code">EN</span>
+      </button>
+    </div>
+
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"          onclick="toggleMenu()" data-i18n="nav_about">Sobre</a>
+    <a href="#skills"         onclick="toggleMenu()" data-i18n="nav_skills">Skills</a>
+    <a href="#projects"       onclick="toggleMenu()" data-i18n="nav_projects">Projetos</a>
+    <a href="#certifications" onclick="toggleMenu()" data-i18n="nav_certifications">Certificações</a>
+    <a href="#education"      onclick="toggleMenu()" data-i18n="nav_education">Formação</a>
+    <a href="#experience"     onclick="toggleMenu()" data-i18n="nav_experience">Experiência</a>
+    <a href="#contact"        onclick="toggleMenu()" data-i18n="nav_contact">Contato</a>
+    <div class="mobile-lang">
+      <button class="lang-btn active" data-lang="pt" onclick="setLang('pt');toggleMenu()">PT</button>
+      <button class="lang-btn" data-lang="en" onclick="setLang('en');toggleMenu()">EN</button>
+    </div>
+  </div>
+
+
+  <!-- ───────────────────────────────────────── -->
+  <!--                  HERO                     -->
+  <!-- ───────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-orb1"></div>
+    <div class="hero-orb2"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          <span data-i18n="hero_badge">Disponível para projetos</span>
+        </div>
+
+        <h1 class="hero-name">
+          <span class="line1">Douglas Morais</span>
+          <span class="line2">Dev.</span>
+        </h1>
+
+        <div class="hero-role">
+          <span class="prefix">~/</span>
+          <span class="typewriter" id="typewriter">Front-End Developer</span>
+        </div>
+
+        <p class="hero-desc" data-i18n="hero_desc">
+          Transformo ideias em <strong>experiências digitais</strong> de alto impacto.
+          Especializado em interfaces modernas e interativas — do HTML ao React.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary" data-i18n="hero_btn_projects">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+            Ver Projetos
+          </a>
+          <a href="#contact" class="btn-secondary" data-i18n="hero_btn_contact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Contato
+          </a>
+        </div>
+      </div>
+
+      <!-- Foto -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring">
+          <div class="hero-photo-inner">
+            <img class="foto-perfil" src="assets/Douglas - perfil.jpeg" width="400px" height="420px" alt="Douglas">
+            <!-- <div class="hero-avatar-placeholder">DR</div> -->
+          </div>
+        </div>
+        <div class="hero-photo-badge">✦ Front-End Dev</div>
+        <div class="floating-tag t1">⚡ React &amp; TypeScript</div>
+        <div class="floating-tag t2">🎨 UI / UX</div>
+        <div class="floating-tag t3">✦ JavaScript</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ───────────────────────────────────────── -->
+  <!--                SOBRE MIM                  -->
+  <!-- ───────────────────────────────────────── -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label" data-i18n="about_label">01 — Sobre Mim</div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <h2 class="section-title" data-i18n="about_title">Código com <span>propósito</span></h2>
+
+          <p data-i18n="about_p1">Sou um desenvolvedor Front-End apaixonado por criar interfaces que unem
+            <strong>beleza, performance e usabilidade</strong>. Minha jornada começou em 2025 com
+            curiosidade pura — desmontar sites para entender como funcionavam.
+          </p>
+          <p data-i18n="about_p2">Trabalho com <strong>HTML, CSS e JavaScript</strong> como base sólida,
+            evoluindo com <strong>TypeScript e React</strong> para criar experiências modernas e responsivas.
+          </p>
+          <p data-i18n="about_p3">Quando não estou codando, estou estudando <strong>novas tecnologias</strong> ou
+            explorando o design de interfaces que inspira meu trabalho diário.
+          </p>
+
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="about-card-icon">⚡</div>
+              <span class="about-card-num">1+</span>
+              <div class="about-card-label" data-i18n="stat_years_exp">Anos de experiência</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🚀</div>
+              <span class="about-card-num">10+</span>
+              <div class="about-card-label" data-i18n="stat_delivered">Projetos entregues</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🛠</div>
+              <span class="about-card-num">7+</span>
+              <div class="about-card-label" data-i18n="stat_tech_mastered">Tecnologias dominadas</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">☕</div>
+              <span class="about-card-num">∞</span>
+              <div class="about-card-label" data-i18n="stat_coffees">Cafés consumidos</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal-right">
+          <div class="about-code-block">
+            <div class="code-header">
+              <div class="code-dot r"></div>
+              <div class="code-dot y"></div>
+              <div class="code-dot g"></div>
+              <span class="code-filename">developer.ts</span>
+            </div>
+            <div class="code-body">
+              <div class="code-line"><span class="kw">const</span> <span class="fn">developer</span> = {</div>
+              <div class="code-line"><span class="indent"></span><span class="str">name</span>: <span class="str">"Douglas Rodrigues de Morais"</span>,</div>
+              <div class="code-line"><span class="indent"></span><span class="str">role</span>: <span class="str">"Front-End Developer"</span>,</div>
+              <div class="code-line"><span class="indent"></span><span class="str">location</span>: <span class="str">"Brasil 🇧🇷"</span>,</div>
+              <div class="code-line"><span class="indent"></span><span class="str">skills</span>: [</div>
+              <div class="code-line"><span class="indent"></span><span class="indent"></span><span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JavaScript"</span>,</div>
+              <div class="code-line"><span class="indent"></span><span class="indent"></span><span class="str">"TypeScript"</span>, <span class="str">"React"</span>, <span class="str">"Git"</span></div>
+              <div class="code-line"><span class="indent"></span>],</div>
+              <div class="code-line"><span class="indent"></span><span class="str">available</span>: <span class="kw">true</span>,</div>
+              <div class="code-line"><span class="indent"></span><span class="fn">build</span>: () =&gt; <span class="str">"amazing interfaces 🚀"</span></div>
+              <div class="code-line">};</div>
+              <br/>
+              <div class="code-line"><span class="cm">// Always learning, always building</span></div>
+              <div class="code-line"><span class="fn">developer</span>.<span class="fn">build</span>();</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ───────────────────────────────────────── -->
+  <!--                  SKILLS                   -->
+  <!-- ───────────────────────────────────────── -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label" data-i18n="skills_label">02 — Tecnologias</div>
+      <h2 class="section-title reveal" data-i18n="skills_title">Stack <span>Técnico</span></h2>
+      <p class="section-desc reveal" data-i18n="skills_desc">Ferramentas e tecnologias que uso para construir interfaces digitais.</p>
+
+      <div class="skills-ticker-wrap">
+        <div class="skills-ticker" id="skillsTicker"></div>
+      </div>
+
+      <div class="skills-locked-label reveal" data-i18n="skills_locked_label">
+        <span class="locked-icon">🔒</span>
+        <span data-i18n="skills_unlocking">Desbloqueando em breve...</span>
+      </div>
+      <div class="skills-locked-grid" id="skillsLockedGrid"></div>
+    </div>
+  </section>
+
+
+  <!-- ───────────────────────────────────────── -->
+  <!--        PROJETOS — 2 na home               -->
+  <!-- ───────────────────────────────────────── -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label" data-i18n="projects_label">03 — Projetos</div>
+      <h2 class="section-title reveal" data-i18n="projects_title">Trabalhos <span>Recentes</span></h2>
+      <p class="section-desc reveal" data-i18n="projects_desc">Uma seleção dos projetos que mais me orgulho.</p>
+
+      <!-- projects-grid--2 = apenas 2 colunas, mais espaço para o vídeo -->
+      <div class="projects-grid projects-grid--2" id="projectsGrid"></div>
+
+      <div class="projects-see-all reveal">
+        <a href="#all-projects" class="btn-see-all" id="btnSeeAll" onclick="openAllProjects(event)">
+          <span data-i18n="projects_see_all">Ver todos os projetos</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal — Todos os Projetos -->
+  <div class="all-projects-overlay" id="allProjectsOverlay" onclick="closeAllProjects(event)">
+    <div class="all-projects-drawer" id="allProjectsDrawer">
+      <div class="all-projects-header">
+        <div>
+          <div class="section-label" style="margin-bottom:.25rem" data-i18n="projects_label">03 — Projetos</div>
+          <h2 class="section-title" style="margin-bottom:0" data-i18n="all_projects_title">Todos os <span>Projetos</span></h2>
+        </div>
+        <button class="drawer-close" onclick="closeAllProjects()">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="projects-grid" id="allProjectsGrid"></div>
+    </div>
+  </div>
+
+
+  <!-- ───────────────────────────────────────── -->
+  <!--             CERTIFICAÇÕES                 -->
+  <!-- ───────────────────────────────────────── -->
+  <section id="certifications">
+    <div class="section-inner">
+      <div class="section-label" data-i18n="cert_label">04 — Certificações</div>
+      <h2 class="section-title reveal" data-i18n="cert_title">Minhas <span>Certificações</span></h2>
+      <p class="section-desc reveal" data-i18n="cert_desc">Cursos e certificações que validam meu conhecimento técnico.</p>
+      <div class="certs-grid" id="certsGrid"></div>
+
+      <div class="projects-see-all reveal">
+        <a href="#" class="btn-see-all" id="btnSeeAllCerts" onclick="openAllCerts(event)">
+          <span>Ver todos os certificados</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal — Todos os Certificados -->
+  <div class="all-projects-overlay" id="allCertsOverlay" onclick="closeAllCerts(event)">
+    <div class="all-projects-drawer" id="allCertsDrawer">
+      <div class="all-projects-header">
+        <div>
+          <div class="section-label" style="margin-bottom:.25rem">04 — Certificações</div>
+          <h2 class="section-title" style="margin-bottom:0">Todos os <span>Certificados</span></h2>
+        </div>
+        <button class="drawer-close" onclick="closeAllCerts()">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="projects-grid" id="allCertsGrid"></div>
+    </div>
+  </div>
+
+
+  <!-- ───────────────────────────────────────── -->
+  <!--           FORMAÇÃO ACADÊMICA              -->
+  <!-- ───────────────────────────────────────── -->
+  <section id="education">
+    <div class="section-inner">
+      <div class="section-label" data-i18n="edu_label">05 — Formação Acadêmica</div>
+      <h2 class="section-title reveal" data-i18n="edu_title">Minha <span>Formação</span></h2>
+      <p class="section-desc reveal" data-i18n="edu_desc">A base acadêmica que fundamenta meu desenvolvimento profissional.</p>
+      <div class="education-grid" id="educationGrid"></div>
+    </div>
+  </section>
+
+
+  <!-- ───────────────────────────────────────── -->
+  <!--              EXPERIÊNCIA + FOTO           -->
+  <!-- ───────────────────────────────────────── -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-label" data-i18n="exp_label">06 — Trajetória</div>
+      <h2 class="section-title reveal" data-i18n="exp_title">Minha <span>Jornada</span></h2>
+      <p class="section-desc reveal" data-i18n="exp_desc">A linha do tempo da minha evolução como desenvolvedor.</p>
+
+      <div class="experience-layout">
+        <div class="timeline" id="timeline"></div>
+
+        <div class="experience-photo-wrap reveal-right">
+          <div class="exp-photo-label" data-i18n="exp_photo_label">Quem está por trás do código</div>
+          <div class="exp-photo-frame" id="expPhotoFrame">
+            <div class="exp-photo-display">
+              <img id="expPhotoImg" class="exp-photo-img" src="assets/Douglas - programador.jpeg" alt="Douglas Rodrigues"/>
+            </div>
+            <div class="exp-photo-glow"></div>
+          </div>
+          <div class="exp-photo-tags">
+            <span class="exp-tag">💻 Front-End</span>
+            <span class="exp-tag">🎨 UI Lover</span>
+            <span class="exp-tag">📍 Brasil</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ───────────────────────────────────────── -->
+  <!--                 CONTATO                   -->
+  <!-- ───────────────────────────────────────── -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-label" data-i18n="contact_label">07 — Contato</div>
+
+      <div class="contact-grid">
+        <div>
+          <h2 class="section-title reveal" data-i18n="contact_title">Vamos <span>conversar?</span></h2>
+          <p class="section-desc reveal" data-i18n="contact_desc">Disponível para projetos freelance, oportunidades e colaborações criativas.</p>
+          <!-- Links de contato renderizados pelo JS com os links reais -->
+          <div class="contact-links" id="contactLinks"></div>
+        </div>
+
+        <div class="reveal-right">
+          <form class="contact-form-side" action="https://formcarry.com/s/OrDROqI2uLT" method="POST" enctype="multipart/form-data">
+            <div style="margin-bottom:1.5rem">
+              <div class="section-label" style="margin-bottom:.5rem" data-i18n="contact_form_label">Mensagem Direta</div>
+              <h3 style="font-family:'Syne',sans-serif;font-size:1.25rem;font-weight:700;letter-spacing:-.02em" data-i18n="contact_form_title">Envie uma mensagem</h3>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="form_name">Nome</label>
+              <input type="text" class="form-input" name="name" data-i18n-placeholder="form_name_ph" placeholder="Seu nome"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="form_email">Email</label>
+              <input type="email" class="form-input" name="email" data-i18n-placeholder="form_email_ph" placeholder="seu@email.com"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="form_message">Mensagem</label>
+              <textarea class="form-textarea" name="message" data-i18n-placeholder="form_msg_ph" placeholder="Fale sobre seu projeto..."></textarea>
+            </div>
+            <button class="form-submit" id="formSubmit" type="submit" data-i18n="form_submit">Enviar Mensagem →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ───────────────────────────────────────── -->
+  <!--                  FOOTER                   -->
+  <!-- ───────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">douglas.dev</div>
+      <p class="footer-copy" data-i18n="footer_copy">© 2025 · Douglas Rodrigues de Morais · Feito com ♥ e muito café</p>
+      <div class="footer-social">
+        <!-- Footer: links reais -->
+        <a href="https://github.com/douglasrmorais" class="footer-soc" title="GitHub" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/douglas-moraiss" class="footer-soc" title="LinkedIn" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/douglas_morais.75?igsh=ajkyZjJ5ODI4cnc2" class="footer-soc" title="Instagram" target="_blank" rel="noopener">
+          <!-- Ícone Instagram real com gradiente no footer -->
+          <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="ig-footer" cx="30%" cy="107%" r="150%">
+                <stop offset="0%" stop-color="#fdf497"/>
+                <stop offset="45%" stop-color="#fd5949"/>
+                <stop offset="60%" stop-color="#d6249f"/>
+                <stop offset="90%" stop-color="#285AEB"/>
+              </radialGradient>
+            </defs>
+            <rect width="24" height="24" rx="6" fill="url(#ig-footer)"/>
+            <path fill="#fff" d="M12 7.378A4.622 4.622 0 1 0 12 16.622 4.622 4.622 0 0 0 12 7.378zm0 7.622a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            <circle fill="#fff" cx="16.804" cy="7.196" r="1.08"/>
+            <path fill="#fff" d="M15.998 3H8.002A5.007 5.007 0 0 0 3 8.002v7.996A5.007 5.007 0 0 0 8.002 21h7.996A5.007 5.007 0 0 0 21 15.998V8.002A5.007 5.007 0 0 0 15.998 3zm3.44 13a3.446 3.446 0 0 1-3.44 3.44H8.002A3.446 3.446 0 0 1 4.56 15.998V8.002A3.446 3.446 0 0 1 8.002 4.56h7.996A3.446 3.446 0 0 1 19.44 8.002v7.996z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
