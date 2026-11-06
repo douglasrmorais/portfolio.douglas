@@ -16,17 +16,17 @@ const i18n = {
     nav_experience: "Experiência",
     nav_contact: "Contato",
     hero_badge: "Disponível para projetos",
-    hero_desc: `Transformo ideias em <strong>experiências digitais</strong> de alto impacto.
-                Especializado em interfaces modernas e interativas — do HTML ao React.`,
+    hero_desc: `Transformo ideias em <strong>aplicações web completas</strong> e de alto impacto.
+                Da interface à lógica do servidor, desenvolvo experiências modernas de ponta a ponta.`,
     hero_btn_projects: "Ver Projetos",
     hero_btn_contact: "Contato",
     about_label: "01 — Sobre Mim",
     about_title: `Código com <span>propósito</span>`,
-    about_p1: `Sou um desenvolvedor Front-End apaixonado por criar interfaces que unem
+    about_p1: `Sou um desenvolvedor Full Stack apaixonado por criar aplicações web que unem
                <strong>beleza, performance e usabilidade</strong>. Minha jornada começou em 2025 com
                curiosidade pura — desmontar sites para entender como funcionavam.`,
-    about_p2: `Trabalho com <strong>HTML, CSS e JavaScript</strong> como base sólida,
-               evoluindo com <strong>TypeScript e React</strong> para criar experiências modernas e responsivas.`,
+    about_p2: `Atuo no desenvolvimento de aplicações completas, da interface à lógica do servidor,
+               criando experiências modernas e integrando as diferentes partes de cada projeto.`,
     about_p3: `Quando não estou codando, estou estudando <strong>novas tecnologias</strong> ou
                explorando o design de interfaces que inspira meu trabalho diário.`,
     stat_years_exp: "Anos de experiência",
@@ -35,7 +35,7 @@ const i18n = {
     stat_coffees: "Cafés consumidos",
     skills_label: "02 — Tecnologias",
     skills_title: `Stack <span>Técnico</span>`,
-    skills_desc: "Ferramentas e tecnologias que uso para construir interfaces digitais.",
+    skills_desc: "Ferramentas e tecnologias que uso para desenvolver aplicações web completas.",
     skills_locked_label: "Em desbloqueio",
     skills_unlocking: "Desbloqueando em breve...",
     projects_label: "03 — Projetos",
@@ -87,17 +87,17 @@ const i18n = {
     nav_experience: "Experience",
     nav_contact: "Contact",
     hero_badge: "Available for projects",
-    hero_desc: `I transform ideas into <strong>high-impact digital experiences</strong>.
-                Specialized in modern and interactive interfaces — from HTML to React.`,
+    hero_desc: `I turn ideas into <strong>complete, high-impact web applications</strong>.
+                From the interface to server-side logic, I build modern end-to-end experiences.`,
     hero_btn_projects: "View Projects",
     hero_btn_contact: "Contact",
     about_label: "01 — About Me",
     about_title: `Code with <span>purpose</span>`,
-    about_p1: `I'm a Front-End developer passionate about creating interfaces that combine
+    about_p1: `I'm a Full Stack developer passionate about creating web applications that combine
                <strong>beauty, performance and usability</strong>. My journey began in 2025 with
                pure curiosity — disassembling websites to understand how they worked.`,
-    about_p2: `I work with <strong>HTML, CSS and JavaScript</strong> as a solid foundation,
-               evolving with <strong>TypeScript and React</strong> to create modern and responsive experiences.`,
+    about_p2: `I build complete applications, from the interface to server-side logic,
+               creating modern experiences and integrating each part of a project.`,
     about_p3: `When I'm not coding, I'm studying <strong>new technologies</strong> or
                exploring interface design that inspires my daily work.`,
     stat_years_exp: "Years of experience",
@@ -106,7 +106,7 @@ const i18n = {
     stat_coffees: "Coffees consumed",
     skills_label: "02 — Technologies",
     skills_title: `Tech <span>Stack</span>`,
-    skills_desc: "Tools and technologies I use to build digital interfaces.",
+    skills_desc: "Tools and technologies I use to build complete web applications.",
     skills_locked_label: "Unlocking",
     skills_unlocking: "Unlocking soon...",
     projects_label: "03 — Projects",
@@ -570,8 +570,8 @@ const contacts = [
 ];
 
 /* ── ROLES DO TYPEWRITER ─────────────────────────────────────── */
-const rolesPt = ["Front-End Developer", "UI Designer", "React Developer", "HTML & CSS Lover"];
-const rolesEn = ["Front-End Developer", "UI Designer", "React Developer", "HTML & CSS Lover"];
+const rolesPt = ["Desenvolvedor Full Stack", "Desenvolvedor Web", "Desenvolvedor de aplicações"];
+const rolesEn = ["Full Stack Developer", "Web Developer", "End-to-end Developer"];
 
 function getRoles() {
   return currentLang === "en" ? rolesEn : rolesPt;
